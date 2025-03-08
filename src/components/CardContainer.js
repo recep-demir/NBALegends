@@ -8,7 +8,6 @@ function CardContainer() {
   const aramaFonksiyonu = (e) => {
     setAranan(e.target.value);
   };
-
   const filteredData = data.filter((item) =>
     item.name.toLowerCase().includes(aranan.toLowerCase())
   );
