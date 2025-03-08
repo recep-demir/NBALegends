@@ -23,5 +23,4 @@ function PlayerCard({ name, img, statistics }) {
     </div>
   );
 }
-
 export default PlayerCard;
