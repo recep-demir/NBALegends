@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# NBA Legends App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Demo](https://nba-legends-react0.netlify.app/)
+## Screenshots
 
-## Available Scripts
+![App Screenshot](./public/image.png)
+ 
+This project is a React application that displays NBA legends and their statistics. It allows users to search for players and view their information.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+-   **Display NBA Legends:** Shows a list of NBA legends with their images and statistics.
+-   **Search Functionality:** Enables users to search for players by name.
+-   **Interactive Cards:** Players' cards are interactive, allowing users to toggle between the player's image and their statistics.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   React 19.0.0
+-   React DOM 19.0.0
+-   React Scripts 5.0.1
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run this project locally, follow these steps:
 
-### `npm run build`
+1.  **Clone the repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    git clone <repository_url>
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.  **Navigate to the project directory:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    cd nba-app
+    ```
 
-### `npm run eject`
+3.  **Install dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4.  **Start the development server:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    This will open the application in your default web browser.
 
-## Learn More
+## Project Structure
+```
+nba-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── CardContainer.js
+│   │   ├── Header.js
+│   │   ├── PlayerCard.js
+│   ├── helper/
+│   │   ├── data.js
+│   ├── assets/
+│   │   ├── nba-logo.png
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   `src/components`: Contains React components for the application.
+    -   `CardContainer.js`: Manages the player cards and search functionality.
+    -   `Header.js`: Displays the application header.
+    -   `PlayerCard.js`: Displays individual player information.
+-   `src/helper`: Contains helper files.
+    -   `data.js`: Holds the player data.
+-   `src/assets`: Contains static assets like images.
+-   `App.js`: The main application component.
+-   `App.css`: Styles for the main application.
+-   `index.js`: Entry point of the application.
+-   `index.css`: Global styles.
+-   `package.json`: Manages project dependencies and scripts.
 
-### Code Splitting
+## Data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The player data is stored in `src/helper/data.js`. You can modify this file to add or update player information.
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-   Use the search bar to find players by name.
+-   Click on a player card to toggle between the player's image and their statistics.
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are welcome! If you find a bug or have an idea for a new feature, please open an issue or submit a pull request.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
